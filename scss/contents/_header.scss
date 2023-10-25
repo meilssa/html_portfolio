@@ -1,0 +1,54 @@
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgba($color: black, $alpha: 0.5);
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 0;
+    .inner{
+        width: 1180px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        h1{
+            width: 50px;
+            height: 50px;
+            a{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .wrap{
+            #gnb{
+                >li{
+                    float: left;
+                    position: relative;
+                    text-align: center;
+                    z-index: 2;
+                    &:hover{
+                        a{
+                            color: #fff;
+                        }
+                    }
+                    >a{
+                        display: block;
+                        width: 130px;
+                        height: 50px;
+                        font: bold 20px/50px "Mooli";
+                        color: #aaa;
+                        border-radius: 5px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

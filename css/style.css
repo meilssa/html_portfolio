@@ -1,0 +1,500 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li, ul, ol {
+  list-style: none;
+}
+
+.vid {
+  width: 100vw;
+}
+.vid video {
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+
+.member {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #bbb;
+  position: absolute;
+  bottom: 0;
+}
+.member h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.member .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.member .box .pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.member .box .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#member-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: white;
+  z-index: 10;
+}
+#member-box .member-content {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#member-box .member-content .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 30px;
+}
+#member-box .member-content #member-details {
+  width: 100%;
+  height: 100%;
+  margin-left: 74px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#member-box .member-content #member-details .sigh_box {
+  width: 15%;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+#member-box .member-content #member-details .sigh_box .sigh {
+  background-color: #fff;
+  width: 100%;
+}
+#member-box .member-content article {
+  width: 80%;
+  height: 50vh;
+  object-fit: cover;
+}
+#member-box .member-content article img {
+  width: 100%;
+  height: 100%;
+}
+
+.member_twice {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #bbb;
+  position: absolute;
+  bottom: 0;
+}
+.member_twice h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.member_twice .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.member_twice .box .pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.member_twice .box .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#member-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: white;
+}
+#member-box .member-content {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#member-box .member-content .close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 30px;
+}
+#member-box .member-content #member-details {
+  width: 100%;
+  height: 100%;
+}
+#member-box .member-content article {
+  width: 80%;
+  height: 50vh;
+  object-fit: cover;
+}
+#member-box .member-content article img {
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/location/back.jpg);
+  background-size: contain;
+}
+.map .map_box {
+  height: 100%;
+}
+.map .map_box .location {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map .map_box .location #map {
+  width: 80%;
+  height: 80vh;
+}
+.map .map_name {
+  width: 100%;
+  position: fixed;
+  bottom: 5%;
+  left: 10%;
+}
+.map .map_name button {
+  cursor: pointer;
+  width: 12%;
+  height: 35px;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  color: white;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 0;
+}
+header .inner {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .inner h1 {
+  width: 50px;
+  height: 50px;
+}
+header .inner h1 a img {
+  width: 100%;
+  height: 100%;
+}
+header .inner .wrap #gnb > li {
+  float: left;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+header .inner .wrap #gnb > li:hover a {
+  color: #fff;
+}
+header .inner .wrap #gnb > li > a {
+  display: block;
+  width: 130px;
+  height: 50px;
+  font: bold 20px/50px "Mooli";
+  color: #aaa;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.mv {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.mv video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  width: 100%;
+  padding: 30px 0px 0px 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #bbb;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+footer .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+footer .inner .footer_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .inner .footer_box::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 10px 0px;
+}
+footer .inner .footer_box h1 {
+  font: bold 30px/1 "Roboto Slab";
+  text-align: center;
+  margin-bottom: 20px;
+}
+footer .inner .footer_box ul {
+  display: flex;
+  margin-bottom: 20px;
+}
+footer .inner .footer_box ul li {
+  margin-right: 20px;
+  text-align: center;
+}
+footer .inner .footer_box ul li a {
+  font: 14px/1 "arial";
+  color: #aaa;
+}
+footer .inner .footer_box ul span {
+  margin-right: 20px;
+  color: #aaa;
+}
+footer .inner .footer_box p {
+  font: 14px/1 "arial";
+}
+footer .inner .footer_under {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+footer .inner .footer_under .music_Cheshire, footer .inner .footer_under .muisc_party {
+  width: 1180px;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+footer .inner .footer_under .search {
+  width: 20%;
+  display: inline-flex;
+  border: 1px solid #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 10px;
+}
+footer .inner .footer_under .search input {
+  width: 100%;
+  height: 30px;
+  font: normal 14px/30px "맑은 고딕";
+  border: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.01);
+  color: #aaa;
+}
+
+.container_email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/location/back.jpg);
+  background-size: cover;
+}
+.container_email .email-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+}
+.container_email .email-container .email-list {
+  border-bottom: 1px solid #999;
+}
+.container_email .email-container .email-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container_email .email-container .email-list ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+.container_email .email-container .email-list ul li:hover {
+  background-color: #ddd;
+}
+.container_email .email-container .email-form form {
+  display: flex;
+  flex-direction: column;
+}
+.container_email .email-container .email-form form input, .container_email .email-container .email-form form textarea {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container_email .email-container .email-form form button {
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.container_email .email-container .email-form form button:hover {
+  background-color: rgba(0, 0, 255, 0.6);
+}
+
+#container {
+  width: 500px;
+  height: 58.4%;
+  margin: 30px auto;
+  padding: 0px 20px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: gray;
+  position: absolute;
+  left: 0px;
+  bottom: 32.4%;
+  transition: 1s;
+  cursor: pointer;
+}
+#container .fa-angles-left {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+}
+#container .fa-angles-right {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50%;
+  left: 100%;
+  opacity: 0;
+}
+#container.on {
+  left: -500px;
+}
+#container.on .fa-angles-left {
+  opacity: 0;
+  z-index: -1;
+}
+#container.on .fa-angles-right {
+  opacity: 1;
+  z-index: 1;
+}
+#container.on #info {
+  left: -500px;
+}
+#container h1 {
+  text-align: center;
+  border-bottom: 1px solid #999;
+  color: white;
+}
+#container .TOP100 {
+  margin: 10px 20px;
+  padding: 20px 30px;
+  color: white;
+  background-color: rgba(153, 153, 153, 0.2);
+}
+#container .TOP100:hover {
+  background-color: rgba(238, 238, 238, 0.2);
+}
+#container #info {
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

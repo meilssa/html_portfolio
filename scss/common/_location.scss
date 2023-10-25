@@ -1,0 +1,35 @@
+.map{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/location/back.jpg);
+    background-size: contain;
+    .map_box{
+        height: 100%;
+        .location{
+            height: 100%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            #map{
+                width: 80%;height: 80vh;
+            }
+        }
+    }
+    .map_name{
+        width: 100%;
+        position: fixed;
+        bottom: 5%;
+        left: 10%;
+        button{
+            cursor: pointer;
+            width: 12%;
+            height: 35px;
+            padding: 2px;
+            background-color: rgba($color: #000000, $alpha: 0);
+            border: 2px solid white;
+            color: white;
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+    }
+}

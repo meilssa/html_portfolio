@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JYP_Entertainment</title>
+    
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2ab9dd3e0b9065ee803dafdda0417e34"></script>
+    <script defer src="script/location.js"></script>
+    <link rel="icon" href="./img/jyp_logo-favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1 class="logo"><a href="index.html"><img src="img/channels4_profile.png" alt="jyp 하얀색 로고"></a></h1>
+            <div class="wrap">
+                <ul id="gnb">
+                    <li><a href="day6.html">DAY6</a>
+                    </li>
+                    <li><a href="itzy.html">ITZY</a>
+                    </li>
+                    <li><a href="TWICE.html">TWICE</a>
+                    </li>
+                    <li><a href="nmixx.html">NMIXX</a>
+                    </li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="map">
+        <section class="map_box">
+            <article class="location">
+                <div id="map"></div>
+            </article>
+            <p class="map_name">
+                <button onclick="setCenter()">JYP 본사</button> 
+                <button onclick="panTo()">우리인재개발원</button> 
+            </p>
+        </section>
+    </main>
+    
+  </body>
+</html>

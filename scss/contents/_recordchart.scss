@@ -1,0 +1,63 @@
+#container{
+    width: 500px;
+    height: 58.4%;
+    margin: 30px auto; 
+    padding: 0px 20px 30px;
+    background-color: rgba($color: black, $alpha: 0.5);
+    border: gray;
+    position: absolute;
+    left: 0px;
+    bottom: 32.4%;
+    transition: 1s;
+    cursor: pointer;
+    .fa-angles-left{
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        bottom: 50%;
+        right: 0;
+    }
+    .fa-angles-right{
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        bottom: 50%;
+        left: 100%;
+        opacity: 0;
+    }
+    &.on{
+        left: -500px;
+        .fa-angles-left{
+            opacity: 0;
+            z-index: -1;
+        }
+        .fa-angles-right{
+            opacity: 1;
+            z-index: 1;
+        }
+        #info{
+            left: -500px;
+        }
+    }
+    h1{
+        text-align: center;
+        border-bottom: 1px solid #999;
+        color: white;
+    }
+    .TOP100{
+        margin: 10px 20px; 
+        padding: 20px 30px;
+        color: white;
+        background-color: rgba($color: #999, $alpha: 0.2);
+        &:hover {
+            background-color: rgba($color: #eee, $alpha: 0.2);
+        }
+    }
+    #info{
+        color: white;
+        text-align: center;
+    }
+
+}
